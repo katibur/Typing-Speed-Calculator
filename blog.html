@@ -16,58 +16,128 @@
         img {
             height: 300px;
         }
+
+        #back-btn {
+            position: absolute;
+            top: 4%;
+            left: 90%;
+        }
+
+        #back-btn2 {
+            display: none;
+        }
+
+        @media only screen and (max-width: 700px) {
+            #back-btn {
+                position: absolute;
+                top: 2%;
+                left: 40%;
+                margin-bottom: 50px;
+                display: none;
+            }
+
+            #back-btn2 {
+                position: absolute;
+                left: 40%;
+                display: block;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <a href="index.html" class="btn btn-primary" id="back-btn">Back</a>
     <h1 class="m-auto text-center fw-bold fst-italic mt-4 mb-4">Blogs On JavaScript</h1>
 
-    <div class="row row-cols-1 row-cols-md-2 g-4 mx-2">
-        <div class="col">
-            <div class="card bg-info">
-                <img src="card1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                </div>
+    <div class="mx-4 fs-5 mb-sm-5">
+        <div class="card bg-info text-white mb-4">
+            <div class="card-body">
+                <h5 class="card-title fw-bold text-lg-center fs-3 text-sm-start">1. What are the differences between
+                    Local
+                    Storage and
+                    Session
+                    Storage?</h5>
+                <p class="card-text">LocalStorage and sessionStorage are almost identical and have the same API.
+                    The
+                    difference is that with sessionStorage,the data is persisted only until the window or tab is
+                    closed. With localStorage, the data is persisted until the user manually clears the browser
+                    cache or until your web app clears the data.</p>
             </div>
         </div>
-        <div class="col">
-            <div class="card bg-info">
-                <img src="card2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                </div>
+
+        <div class="card bg-info text-white mb-4">
+            <div class="card-body">
+                <h5 class="card-title fw-bold text-lg-center fs-3 text-sm-start">2. What are the differences between
+                    Global
+                    Scope and
+                    Block
+                    Scope?
+                </h5>
+                <p class="card-text">The variables defined outside of any function or curly brackets are known
+                    as
+                    global variables and have global scope.
+                    Global scope means that the variables can be accessed from any part of that program, any
+                    function or conditional state
+                    can access that variable.
+                    <br> <br>
+                    Block scope is also a sub-type of local scope. The block scope can be defined as the scope
+                    of
+                    the variables inside the
+                    curly brackets {}. Now, these curly brackets can be of loops, or conditional statements, or
+                    something else. You are only
+                    allowed to refer to these variables from within the curly brackets {}.
+                </p>
             </div>
         </div>
-        <div class="col">
-            <div class="card bg-info">
-                <img src="card3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional
-                        content.</p>
-                </div>
+
+        <div class="card bg-info text-white mb-4">
+            <div class="card-body">
+                <h5 class="card-title  fw-bold text-lg-center fs-3 text-sm-start">3. What is the Mechanism of Event-Loop
+                    in
+                    JavaScript?
+                </h5>
+                <p class="card-text">An event loop is something that pulls stuff out of the queue and places it
+                    onto
+                    the function execution stack whenever
+                    the function stack becomes empty.
+                    The event loop is the secret by which JavaScript gives us an illusion of being multithreaded
+                    even though it is
+                    single-threaded.Event loop manage synchronous and asynchronous in JS.</p>
             </div>
         </div>
-        <div class="col">
-            <div class="card bg-info">
-                <img src="card4.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                </div>
+
+        <div class="card bg-info text-white mb-4">
+            <div class="card-body">
+                <h5 class="card-title fw-bold text-lg-center fs-3 text-sm-start">4. How many ways there to get
+                    UNDEFINED?
+                </h5>
+                <p class="card-text">The undefined is a primitive type in JavaScript.So the undefined is a type
+                    and the undefined type has exactly one value
+                    that is undefined.<br><br>
+                    The ways of getting UNDEFINED are:<br>
+
+                    1. When you declare a variable and don't initialize it to a value, the variable will have a
+                    value of undefined.<br>
+
+                    2. If you access a non-existing property of an object, you'll get undefined.<br>
+
+                    3. When you call a function with a number of parameters, you often pass the same number of
+                    arguments.Otherwise you will get
+                    undefined.<br>
+
+                    4. A function without a return statement or with a return statement but without an
+                    expression
+                    returns undefined.<br>
+
+                    5. When you access an array element that is out-of-bounds, you'll get the undefined.<br></p>
             </div>
+        </div>
+
+        <div>
+            <a href="index.html" class="btn btn-primary" id="back-btn2">Back</a>
         </div>
     </div>
+
 
 </body>
 
