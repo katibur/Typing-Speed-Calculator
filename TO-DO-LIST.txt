@@ -1,0 +1,29 @@
+1.start button
+2.timer(countdown)
+3.timer will remove after 0
+4.history will be in 3columns but on mobile devices history will be one by one
+5.second will be in INT,without decimal.
+6.finished modal in tha middle 
+
+Optional:
+type speed koto?
+lekha boro hoile wrap hbe.
+
+
+bonus:
+1.error counts will be in finished modal(red marked letters)
+2.git commit
+3.blog.html file
+
+in blog:
+1.What are the differences between Local Storage and Session Storage?
+2.What are the differences between Global Scope and Block Scope?
+3.What is the Mechanism of Event-Loop in JavaScript?
+4.How many ways there to get UNDEFINED?
+
+
+
+Submission:
+1.private repo link
+2.netlify deployed link
+3.blog.html netlify link
