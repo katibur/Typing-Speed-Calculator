@@ -70,6 +70,19 @@ const gameOver = () => {
   const finishTime = new Date().getTime();
   const timeTaken = parseInt((finishTime - startTime) / 1000);
 
+
+  // typing speed
+  let words = questionText.length;
+  let cahracterPerSecond = 0;
+  if (errorCount >= 1) {
+    words = questionText.length + errorCount;
+    cahracterPerSecond = Math.round(words / timeTaken);
+  }
+  else {
+    cahracterPerSecond = Math.round((questionText.length) / timeTaken);
+  }
+
+
   // show result modal
   resultModal.innerHTML = "";
   resultModal.classList.toggle("hidden");
@@ -84,10 +97,11 @@ const gameOver = () => {
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
-    <button onclick="closeModal()">Close</button>
+    <p>Your typing speed is: <span class="bold green">${cahracterPerSecond}</span> character per second.</p>
+    <button onclick="closeModal()" id="close-btn">Close</button>
   `;
 
-  addHistory(questionText, timeTaken, errorCount);
+  addHistory(questionText, timeTaken, errorCount, cahracterPerSecond);
 
   // restart everything
   startTime = null;
@@ -135,7 +149,5 @@ displayHistory();
 setInterval(() => {
   const currentTime = parseInt(new Date().getTime());
   const timeSpent = parseInt((currentTime - startTime) / 1000);
-
-
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
 }, 1000);
