@@ -127,6 +127,25 @@ body {
   display: block;
 }
 
+#blogs {
+  text-decoration: none;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100px;
+  height: 60px;
+  color: rgb(32, 105, 104);
+  background-color: #bccbd1;
+  border-radius: 10px;
+  border: 2px solid #9dffad;
+  position: absolute;
+  top: 5%;
+  left: 90%;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
@@ -217,5 +236,29 @@ button {
         rgba(255, 255, 255, 0.05) 99.85%);
     backdrop-filter: blur(5px);
     margin-bottom: 30px;
+  }
+
+  #blogs {
+    text-decoration: none;
+    padding-bottom: 15px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 80px;
+    height: 50px;
+    color: rgb(32, 105, 104);
+    background-color: #bccbd1;
+    border-radius: 10px;
+    border: 2px solid #9dffad;
+    position: absolute;
+    top: 2%;
+    left: 40%;
+  }
+
+  .title {
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+    margin-top: 90px;
   }
 }
